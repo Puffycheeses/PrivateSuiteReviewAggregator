@@ -2,7 +2,7 @@ const express = require('express');
 const app = express()
 const server = require('http').Server(app);
 
-server.listen(3000);
+server.listen(3000, '0.0.0.0');
 
 app.use(express.static('public'))
 
